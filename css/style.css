@@ -496,7 +496,7 @@ padding: 15px 0;
 }
 .sl{
     font-family: 'Marcellus', serif;
-    background-color: #f3f6f3;
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/05/banner9.jpg);
     padding: 70px 0;
 }
 .sl h1{
@@ -625,3 +625,51 @@ overflow: hidden;
         right: 2%;
         
     }
+    .discount p{
+        font-family: 'Marcellus', serif;
+        font-size: 34px;
+        color: #ffffff;
+    }
+    .discount span{
+        font-family:'Marcellus', serif ;
+        font-size: 34px;
+        color: #c0a483;
+    }
+    .discount{
+        background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/05/banner8.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 7rem 0;
+        text-align: center;
+        font-family:'Marcellus', serif ;
+        position: relative;
+    }
+ .discount::before{
+    content: 'EXPLORE NOW';
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50px);
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #882424;
+    padding: 13px 40px;
+
+ }
+ .letter{
+    font-family: 'Marcellus', serif;
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/05/banner10.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 9rem 0;
+ }
+ .letter h2{
+    color: #ffffff;
+    font-size: 30px;
+ }
+ .letter p{
+    color: #ffffff;
+    font-size: 16px;
+ }
+ 
