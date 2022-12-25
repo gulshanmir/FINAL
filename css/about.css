@@ -289,12 +289,98 @@ padding: 15px 0;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
 }
-.story{
-    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about-us.jpg);
-    padding: 10rem;
-}
-text{
-    text-align: center;
-    background-image:url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about-us.jpg); ;
+#story-text{
+text-align: center;
+padding: 11rem 0;
     
 }
+.story{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about-us.jpg);
+    background-position: center;
+    background-size: contain;
+    padding: 55px 0;
+}
+.inspiration-all svg{
+    width: 15%;
+    
+}
+.inspiration-all svg:hover{
+    transform: translateX(10px);
+}
+.inspiration2-all span{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+}
+.inspiration2-all p{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#inspiration{
+    background-color: #7e0f0e;
+}
+.slick-next{
+    right: 30px;
+}
+.slick-prev{
+    left: 30px;
+    z-index: 111;
+}
+.topbrand-all .box{
+    width: 18%;
+    border: 1px solid #868686 ;
+    overflow: hidden;
+    }
+    .topbrand-all .box img{
+        width: 100%;
+        vertical-align: bottom;
+        transition: .6s;
+    }
+    .topbrand-all{
+        display: flex;
+    
+    }
+    #topbrand{
+        background-color: #ffffff;
+        padding: 70px 0;
+        font-family: 'Marcellus', serif;
+    }
+    #topbrand span{
+        font-size: 24px;
+        color: #c0a483; }
+        #topbrand p{
+            font-size: 24px;
+            color: #000000;
+            text-align: center; 
+            padding: 20px 0;
+        }
+        #topbrand .box:hover img{
+            transform: scale(1.1);
+        }
+        
+        .arrow i{
+            color: white;
+            background-color: #c0a483;
+            padding: 25px;
+            position: fixed;
+            bottom: 3%;
+            right: 2%;
+            
+        }
+        .signup h2{
+            color: #ffffff;
+            font-size: 30px;
+            font-family:'Marcellus', serif ;
+
+
+        }
+        .signup{
+            background-color: #c0a483;
+            padding: 50px 0;;
+
+        }
+    
+    
