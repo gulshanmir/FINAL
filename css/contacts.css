@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    padding: 0 4rem;
+    padding: 0 4px;
 }
 a{
     text-decoration: none;
@@ -164,6 +164,9 @@ padding: 15px 0;
     padding: 30px 0;
     background-color: #ffffff;
     display: none;
+    display: flex;
+    top: 0;
+    width: 100%;
 }
 .footerm-all i{
     color: #000000;
@@ -254,4 +257,45 @@ padding: 15px 0;
 }
 .active{
     opacity: 1!important;
+}
+#contact{
+    background-color: #ffffff;
+    padding: 6rem 0;
+    
+}
+#contact span{
+    font-family:'Marcellus', serif ;
+    color: #000000;
+    font-size: 18px;
+}
+#contact p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #868686;
+}
+#contact h2{
+    font-family:'Marcellus', serif ;
+    color: #000000;
+    font-size: 30px;
+}
+.arrow i{
+    color: white;
+    background-color: #c0a483;
+    padding: 25px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    
+}
+.signup h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Marcellus', serif;
+
+
+}
+.signup{
+    background-color: #000000;
+    padding: 50px 0;;
+
 }
