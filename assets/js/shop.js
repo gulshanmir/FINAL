@@ -22,9 +22,9 @@ search.addEventListener('click',()=>{
 if (localStorage.getItem('products')===null){
     localStorage.setItem('products',JSON.stringify([]))
 }
-let buttons=document.querySelectorAll('.icon');
-for(let icon of buttons){
-    icon.onclick=function(e){
+let buttons=document.querySelectorAll('.btn');
+for(let btn of buttons){
+    btn.onclick=function(e){
         e.preventDefault();
         let pr_id=e.target.parentElement.parentElement.id;
         let pr_name=e.target.previousElementSibling.previousElementSibling.innerHTML;
