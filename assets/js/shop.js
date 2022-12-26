@@ -31,12 +31,19 @@ for(let icon of buttons){
         let pr_price=e.target.previousElementSibling.innerHTML;
         let pr_image=e.target.parentElement.previousElementSibling.src;
         let basket=JSON.parse(localStorage.getItem('products'));
-        
+        let exist_prod=basket.find(pr=>pr.Id==pr_id);
+        if(exist_prod===undefined){
         basket.push({Id:pr_id,
-            Name:pr_name,
+         Name:pr_name,
         Price:pr_price,
          Image:pr_image,
         Count:1 })
+
+        }else{
+            exist_prod.Count+=1;
+        }
+
+        
         
          localStorage.setItem('products',JSON.stringify(basket));
     }
