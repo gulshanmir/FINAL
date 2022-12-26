@@ -26,11 +26,13 @@ let buttons=document.querySelectorAll('.icon');
 for(let icon of buttons){
     icon.onclick=function(e){
         e.preventDefault();
+        let pr_id=e.target.parentElement.parentElement.id;
         let pr_name=e.target.previousElementSibling.previousElementSibling.innerHTML;
         let pr_price=e.target.previousElementSibling.innerHTML;
         let pr_image=e.target.parentElement.previousElementSibling.src;
         let basket=JSON.parse(localStorage.getItem('products'))
-        basket.push({Name:pr_name,
+        basket.push({Id:pr_id,
+            Name:pr_name,
         Price:pr_price,
          Image:pr_image,
         Count:1 })
