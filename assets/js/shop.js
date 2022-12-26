@@ -30,7 +30,8 @@ for(let icon of buttons){
         let pr_name=e.target.previousElementSibling.previousElementSibling.innerHTML;
         let pr_price=e.target.previousElementSibling.innerHTML;
         let pr_image=e.target.parentElement.previousElementSibling.src;
-        let basket=JSON.parse(localStorage.getItem('products'))
+        let basket=JSON.parse(localStorage.getItem('products'));
+        
         basket.push({Id:pr_id,
             Name:pr_name,
         Price:pr_price,
