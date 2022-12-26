@@ -271,3 +271,19 @@ padding: 15px 0;
     background-size: cover;
     padding: 4rem 0;
 }
+
+#Products i{
+    color: #f6f6f6;
+    background-color: #c0a483;
+    padding: 20px;
+}
+#Products h5{
+    font-family:'Marcellus', serif ;
+    font-size: 12px;
+    color: #000000;
+}
+#Products p{
+    color: #c0a483;
+    font-size: 16px;
+    font-family:'Marcellus', serif ;
+}
