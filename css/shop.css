@@ -257,3 +257,17 @@ padding: 15px 0;
 .active{
     opacity: 1!important;
 }
+
+.shop h1{
+    color: #ffffff;
+    font-family:'Marcellus', serif  ;
+    font-size: 60px;
+    text-align: center;
+}
+
+.shop{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/bg-breadcrumb.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 0;
+}
