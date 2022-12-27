@@ -16,7 +16,6 @@ let login2=document.querySelector('#login2');
  
 register.addEventListener('click',()=>{
 login2.classList.toggle('active')
-
 })
 
 let search=document.querySelector('#search');
