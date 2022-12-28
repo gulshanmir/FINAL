@@ -34,3 +34,11 @@ function GetItems(){
 
     
 GetItems();
+
+
+
+function BasketCount(){
+  let basket=JSON.parse(localStorage.getItem('products'));
+  document.getElementById('count').innerHTML=basket.length;
+}
+BasketCount();
