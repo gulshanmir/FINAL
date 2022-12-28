@@ -257,4 +257,6 @@ padding: 15px 0;
 .active{
     opacity: 1!important;
 }
-
+.table img{
+width: 65%;
+}
