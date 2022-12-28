@@ -15,7 +15,8 @@ let register=document.querySelector('#register')
 let login2=document.querySelector('#login2');
  
 register.addEventListener('click',()=>{
-  login2.classList.toggle('active')
+login2.classList.toggle('active')
+
 })
 
 let search=document.querySelector('#search');
@@ -166,48 +167,5 @@ $('.slider').slick({
       
     ]
   });
-
-  function BasketCount(){
-    let basket=JSON.parse(localStorage.getItem('products'));
-    document.getElementById('count').innerHTML=basket.length;
-  }
-  BasketCount();
-
-
-  $('.sldetail').slick({
-    dots: false,
-    arrows:true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      
-    ]
-  });
-          
                   
   

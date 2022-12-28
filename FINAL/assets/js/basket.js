@@ -1,19 +1,44 @@
-let menu2=document.querySelector('#menu2');
-let sidebar=document.querySelector('#sidebar');
-let close=document.querySelector('#close');
+function GetItems(){
+    let basket=JSON.parse(localStorage.getItem('products'));
 
-menu2.addEventListener('click',()=>{
-    sidebar.classList.add('active')
-    this.style.visibility='hidden'
-})
+    if(basket.length===0){
 
-close.addEventListener('click',()=>{
-    sidebar.classList.remove('active')
-})
+    }
+    else{
+      document.querySelector('.table').classList.remove('d-none')
+      
+    let html='';
+    for(let item of basket){
+   html+=`
+   
+   <tr>
+   <th scope="row">${item.Id}</th>
+   <td> <img src=${item.Image} alt=""></td>
+   <td>${item.Name}</td>
+   <td>
+   <input type="number" value=${item.Count}>
+   </td>
+   <td>${item.Price}</td>
+ </tr>
+   
+   
+   `
+  
+    }
 
-let search=document.querySelector('#search');
-let search2=document.querySelector('#search2');
 
-search.addEventListener('click',()=>{
-    search2.classList.toggle('active')
-})
+    document.querySelector('table tbody').innerHTML=html
+}
+    }
+
+
+    
+GetItems();
+
+
+
+function BasketCount(){
+  let basket=JSON.parse(localStorage.getItem('products'));
+  document.getElementById('count').innerHTML=basket.length;
+}
+BasketCount();
