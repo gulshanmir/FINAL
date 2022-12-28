@@ -20,4 +20,46 @@ search.addEventListener('click',()=>{
     search2.classList.toggle('active')
 })
 
+if(localStorage.getItem('products')===null){
+    localStorage.setItem('products',JSON.stringify([]))
+}
 
+
+let buttons=document.querySelectorAll('.btn');
+ for(let btn of buttons){
+    btn.onclick=function(e){
+        e.preventDefault();
+        let pr_id = e.target.parentElement.parentElement.id;
+
+        let pr_name=e.target.previousElementSibling.previousElementSibling.innerHTML;
+
+        let pr_price = e.target.previousElementSibling.innerHTML;
+        let pr_image = e.target.parentElement.previousElementSibling.src;
+        
+
+        let  basket=JSON.parse(localStorage.getItem('products'));
+        let exist_prod=basket.find(pr=>pr.Id==pr_id);
+
+        basket.push({
+            Id: pr_id,
+            Name: pr_name,
+            Price: pr_price,
+            Image: pr_image,
+            Count:1
+        })
+        localStorage.setItem('products',JSON.stringify(basket));
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    }
+ }
