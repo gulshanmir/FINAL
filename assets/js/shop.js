@@ -31,6 +31,9 @@ let buttons=document.querySelectorAll('.btn');
         }
         else{
             exist_prod.Count +=1;
+            document.querySelector('#alert p').innerHTML='This product has already been added'
+            document.getElementById('alert').style.right='20px'
+            document.getElementById('alert').style.backgroundColor='#ff0033'
         }
 
        
