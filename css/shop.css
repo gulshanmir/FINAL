@@ -272,11 +272,7 @@ padding: 15px 0;
     padding: 4rem 0;
 }
 
-#Products i{
-    color: #f6f6f6;
-    background-color: #c0a483;
-    padding: 20px;
-}
+
 #Products h5{
     font-family:'Marcellus', serif ;
     font-size: 12px;
@@ -307,6 +303,16 @@ padding: 15px 0;
 #alert p{
     font-weight: bold;
     color: #fff;
+}
+
+.arrow i{
+    color: white;
+    background-color: #c0a483;
+    padding: 25px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    
 }
 
 

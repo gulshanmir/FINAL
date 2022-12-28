@@ -164,6 +164,8 @@ padding: 15px 0;
     padding: 30px 0;
     background-color: #ffffff;
     display: none;
+    position: absolute;
+    top: 0;
 }
 .footerm-all i{
     color: #000000;
