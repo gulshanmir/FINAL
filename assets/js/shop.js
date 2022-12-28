@@ -19,3 +19,5 @@ let search2=document.querySelector('#search2');
 search.addEventListener('click',()=>{
     search2.classList.toggle('active')
 })
+
+

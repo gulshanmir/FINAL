@@ -299,3 +299,35 @@ padding: 15px 0;
     padding: 50px 0;;
 
 }
+ #message h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+ }
+
+ #ms1{
+width: 50%;
+font-size: 50px;
+
+ }
+ #ms2{
+    width: 50%;
+    font-size: 50px;
+    
+ }
+ #ms3{
+    height: 250px;
+ }
+ #message .btn{
+    color: #ffffff;
+    background-color: #6b6b6b;
+    padding: 15px 0;
+ }
+ #message{
+    background-color: #2a2b2d;
+    padding: 70px 50px 90px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+ }
