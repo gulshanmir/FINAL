@@ -5,10 +5,8 @@ function GetItems(){
 
     }
     else{
-      document.querySelector('.table')
-    }
-
-
+      document.querySelector('.table').classList.remove('d-none')
+      
     let html='';
     for(let item of basket){
    html+=`
@@ -24,17 +22,15 @@ function GetItems(){
  </tr>
    
    
-   
-   
-   
-   
-   
    `
-   
-
   
     }
 
+
     document.querySelector('table tbody').innerHTML=html
 }
+    }
+
+
+    
 GetItems();
